@@ -1,0 +1,64 @@
+html {
+    background-color: #292e1e;
+    color: #d3fff3;
+}
+
+#page-container {
+    position: relative;
+    min-height: 100vh;
+}
+  
+#content-wrap {
+    display: flex;
+    flex-flow: column nowrap;
+    padding-bottom: 7.5%;
+}
+  
+#footer {
+    font-size: 56px;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 7.5%;
+}
+
+header {
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    color: #9649CB
+}
+
+a:hover {
+    color: #AFBBF2
+}
+
+#headshot {
+    width: 40%;
+    height: auto;
+    padding: 1% 1%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: 5px solid #7F0799;
+    border-radius: 25%;
+}
+
+section {
+    padding: 1% 0;
+}
+ 
+@media (min-width: 768px){
+    
+}
+    
+@media (min-width: 1024px){
+    
+}
+    

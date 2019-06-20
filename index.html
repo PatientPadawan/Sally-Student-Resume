@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Sally Student Resume</title>
+        <link href="main.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <div id="application-root"></div>
+
+        <script
+        src="https://unpkg.com/react@16/umd/react.development.js">
+        </script>
+
+        <script
+        src="https://unpkg.com/react-dom@16/umd/react-dom.development.js">
+        </script>
+
+        <script
+        src="https://unpkg.com/babel-standalone@6/babel.min.js">
+        </script>
+
+        <script type="text/babel">
+          
+          function App(props) {
+              console.log(props);
+              return (
+                <section>
+                    <div id="content-wrap">
+                        <header><h1>Resume</h1></header>
+                        <main>
+                            <img src="https://i581.photobucket.com/albums/ss253/stargirl18/headshot136scale.jpg"
+                            height="100" width="125" alt="professional headshot of myself" id="headshot"></img>
+                            <header><h2>Contact Information</h2></header>
+                            <address>
+                                <ul>
+                                <li>{props.name}</li>
+                                <li><a href="mailto:SallyStudent@email.com">SallyStudent@Email.com</a></li>
+                                <li>(450) 867-5309</li>
+                                </ul>
+                            </address>
+                            <section>
+                                <header>
+                                <h2>Education</h2>
+                                </header>
+                                <ul>
+                                    <li>Bachelor's degree in Computer Science from UCLA Samueli School of Engineering</li>
+                                    <p></p>
+                                    <li>Diploma from Mesquite High School</li>
+                                </ul>  
+                            </section>
+                            <section>
+                                <header>
+                                <h2>Employment History</h2>
+                                </header>
+                                <ul>
+                                <li>Customer Service Representative - Verizon<br />(08/2017-04/2019)<p>lorem ipsum</p></li>
+                                <li>Lifeguard - Big Splash Water Park<br />(12/2012-08/2017)<p>lorem ipsum</p></li>
+                                </ul>
+                            </section>
+                        </main>
+                        <footer id="footer">© 2019 Sally A. Student</footer>
+                    </div>
+                </section>
+              );
+            }
+
+            ReactDOM.render(
+                <App name="Sally Student" item={[0,1,5,6]} boolean={false}/>,
+                document.querySelector('#application-root')
+            );
+        </script>
+    </body>
+</html>
